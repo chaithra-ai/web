@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-image: url("coco");
+    background-repeat: no-repeat;
+    background-size: 100% 750px;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+/* Navigation Styling */
+#nav1 {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav1 ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#nav1 li {
+    padding-left: 20px;
+    font-size: larger;
+}
+
+#nav1 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Icon Styling */
+#icons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Main Content */
+.content1 {
+    padding: 50px;
+    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.button1 {
+    margin-left: 50px;
+}
+
+.button {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: large;
+    position: relative;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #D56025;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Arrow Buttons */
+#button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.button2 {
+    font-size: larger;
+    font-weight: bold;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.button2:hover {
+    background-color: #D56025;
+    color: white;
+}
+
+/* Image Section */
+.img1 {
+    margin-top: 30px;
+}
+
+/* About Section */
+.content2 {
+    /* background-image: url("honey2");
+    background-repeat: no-repeat; */
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: -100px;
+    text-align: justify;
+    /* z-index: 2; */
+}
+
+#about {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    bottom: 206px;
+    color: black;
+    right: 335px;
+    position: relative;
+}
+
+#read {
+    display: block;
+    margin: 30px auto;
+    background-color: #D56025;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    bottom: 198px;
+}

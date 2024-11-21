@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advertisement Photos with Content</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* Space between the ads */
+    }
+
+    .ad-container {
+      width: 50%; /* Takes half of the full width */
+      max-width: 900px;
+      height: 300px;
+      border: 2px solid #ccc; /* Border for the box model */
+      background-size: cover; /* Ensures the background image covers the container */
+      background-position: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .ad-container:first-child {
+      background-image: url("coco3");
+    }
+
+    .ad-container:last-child {
+      background-image: url("coco");
+    }
+
+    .ad-content {
+      position: relative;
+    }
+
+    .ad-content h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .ad-content p {
+      font-size: 1.2em;
+    }
+
+    /* Button for first ad */
+    .ad-content button {
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .ad-content button:hover {
+      background-color: #0056b3; /* Button hover effect */
+    }
+
+    /* Arrows for second ad */
+    .arrows {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2em;
+      color: white;
+    }
+
+    .arrows span {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    /* Box model properties */
+    .ad-container {
+      padding: 20px; /* Space between text and the edge of the container */
+      margin-bottom: 20px; /* Space between multiple ads */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First Advertisement with Button -->
+  <div class="ad-container">
+    <div class="ad-content">
+      <h1>T0 refresh the worlds and make difference</h1>
+      <p> Shop til You Drop, No Regrets  
+        Shop Your Heart Out, No Limits
+        Your Style, Your Story"
+"Dare to Be Different, Shop with Us
+     </p>
+      <button>Contact</button> <!-- Added button here -->
+    </div>
+  </div>
+
+  <!-- Second Advertisement with Arrows -->
+  <div class="ad-container">
+    <div class="ad-content">
+      <h1>Unleashing Unique Shopping Experiences</h1>
+      <p>Buy Product 2 now and enjoy free shipping on all orders!</p>
+    </div>
+    <div class="arrows">
+      <span>&#8592;</span> <!-- Left Arrow -->
+      <span>&#8594;</span> <!-- Right Arrow -->
+
+      
+  </div>
+
+</body>
+</html>

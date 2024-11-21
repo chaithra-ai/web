@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid Layout</title>
+    <style>
+        /* Styling for the main grid container */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;   
+    gap: 10px;
+    padding: 20px;
+    width: 400px;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.top-item{
+    border: 2px solid black;
+
+}
+.left-grid{
+    border: 2px solid red;
+    text-align: center;
+}
+.left-item{
+    border: 2px solid purple;
+}
+.right-grid{
+    border: 2px solid red;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+}
+.right-item{
+    border: 2px solid purple;
+}
+#one{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+    </style>
+</head>
+<body>
+    <div class="main-grid">
+        
+        <div class="top-item">1</div>
+        <div class="top-item">2</div>
+        <div class="top-item">3</div>
+        
+       
+        <div class="left-grid">
+            <div class="left-item">4</div>
+            <div class="left-item">5</div>
+            <div class="left-item">6</div>
+
+        </div>
+        
+        <div class="right-grid">
+            <div class="right-item" id="one">7</div>
+            <div class="right-item" id="two">8</div>
+        </div>
+    </div>
+</body>
+</html>

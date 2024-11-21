@@ -1,0 +1,44 @@
+body{
+    background-color: lightblue;
+}
+#position{
+    height: 80vh;
+    width: 70vm;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+#fixed{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+}
+#sticky{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+#relative{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: relative;
+    top: 150px;
+}
+body{
+    background-color: lightblue;
+}
+#position{
+    height: 80vh;
+    width: 70vm;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+}
+#absolute{
+    height: 200px;
+    width: 200px;
+    background-color: hotpink;
+}

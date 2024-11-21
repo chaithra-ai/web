@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Dishes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Indian Cuisine</h1>
+        <div class="category">
+            <button onclick="showCategory('veg')">Vegetarian Dishes</button>
+            <button onclick="showCategory('nonveg')">Non-Vegetarian Dishes</button>
+        </div>
+    </header>
+
+    <!-- Display Category Images -->
+    <div id="vegDishes" class="image-category" style="display: none;">
+        <h2>Vegetarian Dishes</h2>
+        <img src="veg6" alt="Vegetable Biryani" onclick="showFeedback()">
+        <img src="veg5" alt="Paneer Butter Masala" onclick="showFeedback()">
+        <img src="veg4" alt="Aloo Gobi" onclick="showFeedback()">
+    </div>
+
+    <div id="nonvegDishes" class="image-category" style="display: none;">
+        <h2>Non-Vegetarian Dishes</h2>
+        <img src="nonveg1.jpg" alt="Butter Chicken" onclick="showFeedback()">
+        <img src="nonveg2.jpg" alt="Chicken Tikka Masala" onclick="showFeedback()">
+        <img src="nonveg3.jpg" alt="Mutton Biryani" onclick="showFeedback()">
+    </div>
+
+    <!-- Feedback Form -->
+    <div id="feedbackForm" class="feedback-form" style="display: none;">
+        <h2>Submit Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="feedback">Your Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

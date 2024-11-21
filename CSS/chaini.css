@@ -1,0 +1,24 @@
+/* p{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid blue;
+    border-style: dashed;
+    margin: 10px;
+} */
+ /* body{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    background-image: url("coco3");
+    background-repeat: no-repeat;
+    /* background-position: 100% 0px; */
+    /* background-position-x: 1000px; */
+    /* background-position-y: 100px; */
+
+    #sam{
+        background-color: black;
+        background-image: url("coco"),url("coco3");
+        background-repeat: no-repeat;
+        background-size: 100% 500px;
+        background-position: top center,bottom center;
+    }

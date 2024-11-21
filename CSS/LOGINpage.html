@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #4facfe, hotpink);
+        }
+        .login-container {
+            background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* max-width: 400px; */
+    /* width: 100%; */
+    HEIGHT: 520px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .input-field {
+            margin-bottom: 20px;
+        }
+        .input-field input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .input-field input:focus {
+            border-color: #4facfe;
+            outline: none;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to right, #4facfe, hotpink);
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #00c6ff;
+        }
+        .footer-text {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+        .footer-text a {
+            color: #4facfe;
+            text-decoration: none;
+        }
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+        #text{
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+        /* .icons{
+            display: flex;
+            z-index: 3;
+            align-items: center;
+        } */
+        .fa-brands fa-facebook{
+            z-index: 90000;
+        }
+        .fa-facebook:before{
+            content: "\f082";
+    position: relative;
+    top: 140px;
+    right: 211px;
+        }
+        .fa-square-twitter:before, .fa-twitter-square:before{
+            content: "\f09a";
+    position: relative;
+    right: 204px;
+    top: 141px;
+        }
+        .fa-google:before{
+            content: "\f09a";
+    position: relative;
+    right: 204px;
+    top: 141px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <div class="input-field">
+                <label for="username">username</label>
+                <input type="text" id="username" placeholder="Type your username" required>
+            </div>
+            <div class="input-field">
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="Type your password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <div class="footer-text">
+            Don't have an account? <a href="#">Sign Up</a>
+        </div>
+        <div id="text">
+            <p>Or Sign Up Using</p>
+        </div>
+    </div>
+    <!-- <div class="icons">
+        <i class="fa-brands fa-square-facebook" style="color: #74C0FC;"></i>
+        <i class="fa-brands fa-twitter" style="color: #63E6BE;"></i>
+        <i class="fa-brands fa-google" style="color: #FFD43B;"></i>
+    </div> -->
+
+</body>
+</html>

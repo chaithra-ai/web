@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: hotpink;
+}
+
+#outer-box {
+    width: 600px;  /* Outer box size */
+    height: 600px; /* Outer box size */
+    border: 3px solid black; /* Outer border */
+    position: relative;
+    background-color: black;
+}
+
+#inner-box1,
+#inner-box2,
+#inner-box3,
+#inner-box4,
+#inner-box5,
+#inner-box6,
+#inner-box7,
+#inner-box8,
+#inner-box9 {
+    width: 80%; /* Size for inner boxes */
+    height: 80%; /* Size for inner boxes */
+    border: 2px solid blue; /* Border for inner boxes */
+    position: absolute;
+    top: 10%; /* Centering */
+    left: 10%;
+    background-color: black; /* Centering */
+}
+
+#small-box {
+    width: 60%;
+    height: 60%;
+    border: 2px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}

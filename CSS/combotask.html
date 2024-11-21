@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+            margin: 0%;
+        }
+        nav{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        #content{
+            display: flex;
+            width: 30%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: yellowgreen;
+        }
+        li{
+            list-style: none;
+        }
+        nav h1{
+            color: orange;
+        }
+        #content+#cart{
+            color: orange;
+        }
+        #cart h2{
+            color: blue;
+        }
+        body{
+            background-color: aqua;
+            background-image: url("img1");
+            background-repeat: no-repeat;
+            background-size: 100px 730px;
+        }
+        /* for img we can take h & w for tag no need body */
+        main{
+            height: 600px;
+            width: 100%;
+            background-image: url("img4");
+            background-repeat: no-repeat;
+            background-size: 100% 600px;
+        }
+        H1{
+            border: ;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>COMBINATOR SELECORS</h1></center>
+        <header>
+        <nav>
+            <div id="logo">
+                <h1>LOGO</h1>
+            </div>
+            <div id="content">
+                <h1>HOME</h1>
+                <li><a href="">servises</a></li>
+                <li><a href="">products</a></li>
+            </div>
+            <div id="cart">
+                <h1>CART</h1>
+            </div>
+        </nav>
+    </header>
+    <main></main>
+</body>
+</html>

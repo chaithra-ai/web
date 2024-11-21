@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div>h1:first-child{
+            color: blue;
+        } */
+
+        div h1:last-child{
+            color: blue;
+        }
+        /* div>h1:nth-child(4)
+        {
+           color: blueviolet;
+           font-size: 50px; 
+        } */
+        /* div>h1:nth-last-child(5){
+            color: aqua;
+            font-size: 50px;
+        } */
+         /* type h2 from starting from code  */
+         /* div>h2:nth-last-of-type(1)
+         {
+            color: blueviolet;
+            font-size: 80px;
+         } */
+
+         /* nth last of type from the last onwads code  */
+         /* starting inda first */
+         /* div>h2:nth-of-type(1)
+         {
+            color: blueviolet;
+            font-size: 80px;
+         } */
+
+         div>section>h1>h1:only-child{
+            color: aqua;
+            font-size: 90px;
+         }
+         div>section>h2:only-of-type{
+            color: yellow;
+         }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>first child</h1>
+        <h2>second child</h2>
+        <h1>third child</h1>
+        <h1>fourth child</h1>
+        <section>
+        <h1>last</h1>
+    </section>
+    </div>
+</body>
+</html>

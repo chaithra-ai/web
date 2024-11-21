@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+#grid-container{
+    height: 70vh;
+    width: 80vw;
+    background-color: teal;
+    margin: 150px auto;
+    display: grid;
+    justify-content: space-evenly;
+
+    grid-template-columns: 23% 50% 23%;
+    grid-template-rows: 100px auto;
+
+   /* column-gap: 1px;
+    row-gap: 5px; */
+
+    gap: 1px 5px;
+}
+.items{
+    border: 2px solid teal;
+    background-color: yellow;
+}
+
+#gird-items1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#gird-items2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#gird-items3{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#gird-items4{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+    </style>
+</head>
+<body>
+    <div id="grid-container">
+        <div id="gird-items1" class="items">grid box1</div>
+        <div id="gird-items2" class="items">grid box2</div>
+        <div id="gird-items3" class="items">grid box3</div>
+        <div id="gird-items4" class="items">grid box4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAG</title>
+    <style>
+        /* inline block to block level element  */
+        b{
+            display: block;
+            height: 300px;
+            width: 300px;
+
+        }
+        /* inline block acts a inline but we can set height and width */
+        p{
+            display: inline;
+            height: 300px;
+            width: 300px;
+        }
+        article{
+            display: inline-block;
+            width: 20%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline block -->
+    <h2>display:inline-block</h2>
+    <div>Lorem ipsum dolor sit.<article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis explicabo accusamus distinctio? Laudantium.</article>
+    </div>
+    <!-- inline -->
+     <h1>display:inline</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quasi illo veniam. Id, aspernatur.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 0;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        #nav2{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;  
+}
+#contents{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+}
+#main{
+    color: #fff;
+    font-size: 54px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    text-align: center;
+    flex-direction: column;
+}
+
+body{
+    background-image: url("Browny\ Free_files/");
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="nav2">
+            <div id="contents">
+                <li><a href="">products</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">history</a></li>
+            </div>
+        </nav>
+    </header>
+    <div id="main">
+      <p>Lorem ipsum dolor sit.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEDO CLASSES</title>
+    <style>
+        h1{
+            text-align: center;
+            color: black;
+        }
+        #link{
+            height: 300px;
+            width: 300px;
+            background-image: url("airpods");
+            background-repeat: no-repeat;
+            background-color: goldenrod;
+            background-size: 100%;
+            /* position: absolute;
+            top: 200px;
+            left: 600px; */
+            margin: 200px auto;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+
+            /* transition-property: background-color border-radius;
+            transition-duration: 10s, 5s;
+            transition-delay: 0.ms,2s; */
+
+            /* shorthand property */
+
+            transition: background-color 10s linear 0.1ms,border-radius 5s linear 2s,transform 10s linear 1s;
+            
+        }
+        #link:hover{
+            background-color: hotpink;
+            border-radius: 50%;
+            transform: rotate(350deg);
+            transform: translateX(200px);
+
+        }
+            body{   
+            background-color: gold;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: aqua;
+        }
+        a:hover{
+            color: blue;
+        }
+        a:active{
+            columns: hotpink;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>PSUEDO CLASSES</h1>
+    <div id="link">
+        <div id="link">
+            <a href="http://www.cricbuzz.com">link</a>
+        </div>
+    </div>
+</body>
+</html>

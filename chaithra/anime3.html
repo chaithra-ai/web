@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        
+        /* main{
+            height: 900px;
+            width: 90%;
+            border: 30px solid black;
+            margin: 30px auto;
+        } */
+        #cloud{
+            position: relative;
+
+        }
+       #flight{
+        position: relative;
+        bottom: 500px;
+        left: 700px;
+        border-radius: 50%;
+        animation-name: flight;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+       }
+       @keyframes flight {
+        0%{
+            position: relative;
+            left: 100%;
+        }
+        100%{
+            left: -100px;
+        }
+        
+       }
+       #bird{
+        position: relative;
+        /* width: 100%; */
+        bottom: 200px;
+        left: 400px;
+        animation-name: bird;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+       }
+       @keyframes bird {
+        0%{
+            position: relative;
+            left: 100%;
+        }
+        25%{
+            bottom: 500px;
+          
+            top: 0px;
+        }
+        /* 75%{
+
+            right: 400px;
+            top: -200px;
+            
+            
+        } */
+        
+
+        
+       }
+       #bird2{
+        position: relative;
+        right: 200px;
+        bottom: 300px;
+        animation-name: bird2;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+       }
+       @keyframes bird2 {
+        0%{
+            position: relative;
+            right: 100px;
+
+        }
+        25%{
+            bottom: 200px;
+        }
+        /* 50%{
+            top: 200px;
+        } */
+        
+       }
+       hr{
+        position: relative;
+        bottom: 150px;
+        border: 15px dashed black;
+            border-spacing: 100px 10px;
+       }
+       #car{
+        position: relative;
+        top: 10px;
+        animation-name: car;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+       }
+       @keyframes car {
+        0%{
+            position: relative;
+            left: -100px;
+        } 
+        100%{
+            left: 100%;
+        }
+        
+       }
+       #cycle{
+        position: relative;
+        bottom: 300px;
+        left: 550px;
+        animation-name: cycle;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+       }
+       @keyframes cycle {
+        0%{
+            position: relative;
+            left: 100%;
+        }
+        100%{
+            left: -100px;
+        }
+        
+        
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="cloud">
+            <img src="https://cdn.pixabay.com/photo/2019/05/21/21/27/rapeseeds-4220199_640.jpg" alt="" height="500px" width="100%">
+            <img src="gif flight1" alt="" id="flight">
+            <img src="gif bird3" alt="" id="bird">
+            <img src="gif bird3" alt="" id="bird2">
+        </div>
+        <div id="grass">
+            <img src="" alt="">
+        </div>
+        <div id="road">
+            <img src="gif car" alt="" id="car">
+            <hr>
+            <img src="gif cycle1" alt="" id="cycle">
+        </div>
+    </main>
+</body>
+</html>

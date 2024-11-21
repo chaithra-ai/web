@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+        body{
+            border-color: hotpink;
+        }
+        #grid-container{
+            height: 60vh;
+            width: 70vw;
+            margin: 100px auto;
+            background-color: black;
+            display: grid;
+
+            gap: 5px 3px;
+
+            grid-template-areas: "hdr hdr hdr hdr"
+                                "hdr1  hdr1 hdr1 hdr1"
+                                "scn scn asd asd"
+                                "ftr ftr ftr ftr";
+        }
+        .items{
+            background-color: white;
+            border: 2px solid black;
+        }
+        #grid-items1{
+            grid-area: hdr;
+        }
+        #grid-items2{
+            grid-area: hdr1;
+        }
+        #grid-items3{
+            grid-area: scn;
+        }
+        #grid-items4{
+            grid-area: asd;
+        }
+        #grid-items5{
+            grid-area: ftr;
+        }
+        #grid-items6{
+            grid-area: ftr;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- grid-container>grid-items$.items{grid-boxes$}*6 -->
+    <div id="grid-container">
+        <div id="grid-items1" class="items">grid-boxes1</div>
+        <div id="grid-items2" class="items">grid-boxes2</div>
+        <div id="grid-items3" class="items">grid-boxes3</div>
+        <div id="grid-items4" class="items">grid-boxes4</div>
+        <div id="grid-items5" class="items">grid-boxes5</div>
+        <div id="grid-items6" class="items">grid-boxes6</div>
+    </div>
+    <!-- div#grid-container>div#grid-items$.items{grid-boxes$}*6 -->
+
+
+</body>
+</html>

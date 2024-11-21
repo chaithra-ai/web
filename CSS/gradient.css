@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: repeating-conic-gradient(red 0.26deg,yellow 0.28deg);
+}
+#linear{
+height: 50vh;
+width: 50vw;
+/* background-image: linear-gradient(to left bottom,red,yellow); */
+/* for sharp color */
+background-image: linear-gradient(red 0%,red 50%,yellow 50%);
+
+}
+#r-linear{
+    height: 50vh;
+    width: 50vw;
+    border: 3px solid white;
+    background-image: repeating-linear-gradient(to top right,white 0%,white 5%,black 5% ,black 10%);
+}
+#radial{
+    height: 50vh;
+    width: 50vw;
+    border: 3px solid white;
+    background-image: radial-gradient(blue 0%,blue 25%,yellow 25%,yellow 50%,hotpink 50%);
+}
+#r-radial{
+    height: 50vh;
+    width: 50vw;
+    border: 3px solid white;
+background-image: repeating-radial-gradient(hotpink 0%,hotpink 15%,black 15%,black 20%);
+
+}
+#gradient{
+    height: 50vh;
+    width: 50vw;
+    border: 3px solid white;
+    position: relative;
+    background-image: linear-gradient(orange 0%,orange 33.3%,white 33.3%,white 66.6%,green 66.6%);
+
+}
+#chakra{
+    height: 15vh;
+    width: 15vw;
+    background-image: repeating-conic-gradient(blue 0%,blue 2%,white 2%,white 4%);
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+}

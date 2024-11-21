@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aqua;
+        }
+        h1{
+            text-align: center;
+            text-decoration: 2px double black underline;
+        }
+        #ani-box{
+            height: 50vh;
+            width: 40vw;
+            background-color: blueviolet;
+            background-image: url("doremon");
+            background-repeat: no-repeat;
+            background-size: 40vw 50vh;
+            border-radius: 5%;
+            margin: 200px auto;
+            animation-name: bhi-chutki;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-delay: 0.1ms;
+            animation-iteration-count: infinite;
+            /* count 4556 p */
+        }
+        @keyframes bhi-chutki{
+            /* from{
+                background-image: url("doremon");
+            }
+            to{
+                background-image: url("airpods");
+            } */
+             
+             0%{
+                background-image: url("bubble1");
+                position: relative;
+                top: 0;
+                left: 0;
+             }
+             25%{
+                background-image: url("bubble2");
+                position: relative;
+                left: 200px;
+                top: 0;
+             }
+             50%{
+                background-image: url("bubble1");
+                position: relative;
+                left: 200px;
+                top: 200px;
+             }
+             75%{
+                background-image: url("bubble1");
+                position: relative;
+                left: 200px;
+                top: 0;
+             }
+        }
+    </style>
+</head>
+<body>
+    <h1>ANIMATION</h1>
+    <div id="ani-box"></div>
+</body>
+</html>

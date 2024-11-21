@@ -1,0 +1,19 @@
+*{
+    background-color: aqua;
+}
+#sam{
+    background-color: bisque;
+    border: 12px solid grey;
+}
+h1{
+    background-color: goldenrod;
+    border: 12px solid grey;
+}
+.demo{
+    background-color: brown;
+    border: 12px solid grey;
+}
+p,h1{
+    background-color: chartreuse;
+    border: 12px solid grey;
+}

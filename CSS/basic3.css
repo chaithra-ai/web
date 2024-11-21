@@ -1,0 +1,25 @@
+/* body{
+    background-image: url("coco"),url("coco3");
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+}
+    div{
+        background-image: url("coco3");
+        background-repeat: no-repeat;
+        background-size: 100% 200px;
+        background-position: ;
+
+    } */
+    #back-count{
+        height: 500px;
+        width: 100%;
+        background-color: khaki;
+        border: 10px solid red;
+        /* background-image: url("cssimage"),url("gth"),url("img1"),url("img4"),url("img1"),url("img2"),url("cssimage"),url("img1"),url("img2"); */
+        background-image: url("coco"),url("coco3");
+        background-repeat: no-repeat;
+        background-size: 100% 300px;
+        /* background-position: center,top center,top right,center right,center left,top left,bottom center,bottom left,bottom right; */
+        background-position: top center,bottom right;
+    }
+/* FIRST WIDTH NEXT HEIGHT */

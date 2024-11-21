@@ -1,0 +1,40 @@
+/* p{
+    background-color: red;
+    border: 2px solid black;
+}
+h1{
+    background-color: blue;
+    border: 2px solid azure;
+} */
+/* above is element by tag name */
+
+
+/* identify element by class name(calss is periodic operator that is dot.) and we can give multiple classes one word is one class here we have two class name run and demo*/
+
+/* .demo{
+    background-color: blueviolet;
+    border: 2px solid burlywood;
+}
+.sam{
+    background-color: blue;
+    border: 2px solid goldenrod;
+
+}
+.run{
+    font-size: 30px;
+} */
+/* ELEMENT BY ID BELOW */
+
+/* #demo{
+    background-color: aqua;
+    border: 2px solid rebeccapurple;
+    font-size: 30px;
+} */
+
+
+/* UNIVERSAL (*) */
+*{
+    background-color: aqua;
+    font-size: 30px;
+    border: 2px solid grey;
+}

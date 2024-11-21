@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        #gridcontainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border: 2px solid black;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        
+        }
+        #gridcontainer>div{
+            border: solid black;
+        }
+        #grid2{
+            height: 200px;
+            width: 150px;
+            border: 2px solid red;
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            border: 2px solid black;
+            grid-template-rows: 1fr 1fr 1fr;
+            margin: 20px auto;
+            
+        }
+        #grid2>div{
+            border: 2px solid red;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div id="gridcontainer">
+        <div class="box1">dabba1</div>
+        <div class="box2">dabba2</div>
+        <div class="box3">dabba3</div>
+        <div id="grid2">
+            <div class="box4">dabba4</div>
+            <div class="box5">dabba5</div>
+            <div class="box6">dabba6</div>
+        </div>
+        <div class="box4">dabba4</div>
+        <div class="box5">dabba5</div>
+        <div class="box6">dabba6</div>
+        <div class="box7">dabba7</div>
+        <div class="box8">dabba8</div>
+        <div class="box9">dabba9</div>
+        <div class="box10">dabba10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 70px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        nav>div:nth-child(2){
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        li{
+            list-style: none;
+        }
+        input{
+            padding: 5px 100px;
+        }
+        body{
+            background-color: aqua;
+        }
+        #transform{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            margin: 150px auto;
+            transition: transform 3s 0.1ms;
+        }
+
+        #transform:hover{
+            transform: rotate(360deg);
+            transform: translatex(400px);
+            transform: translatey(400px);
+            transform: translate(300px -400px);
+            transform: scalex(2);
+            transform: scaley(o.5);
+            transform: skewX(400px);
+            /* translator  */
+
+
+
+
+
+
+            
+
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="home">
+                <img src="bubble1" alt="" height="50px" width="50px">
+            </div>
+            <div id="content">
+                <li><a href="">products</a></li>
+                <li><a href="">products</a></li>
+                <li><a href="">products</a></li>
+                <li><a href="">products</a></li>
+
+            </div>
+        </nav>
+    </header>
+    <div id="transform">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        h1{
+            text-align: center;
+        }
+        #text{
+            font-size: 100px;
+            position: absolute;
+            top: 200px;
+        }
+        span::before{
+            content: "HTML";
+            animation: text 10s linear 1s infinite;
+        }
+        @keyframes text {
+             0%{
+                content: "HTML";
+                color: yellow;
+             }
+             20%{
+                content: "HTML";
+                color: green;
+             }
+             40%{
+                content: "HTML";
+                color: grey;
+             }
+             60%{
+                content: "HTML";
+                color: yellow;
+             }
+             80%{
+                content: "HTML";
+                color: yellow;
+             }
+             100%{
+                content: "HTML";
+                color: yellow;
+             }
+        }
+    </style>
+</head>
+<body>
+    <h1>Task on animation</h1>
+    <h1 id="text">This is web but ghdshjfhj<span></span></h1>
+</body>
+</html>

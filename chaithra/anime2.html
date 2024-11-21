@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            padding: 0 ;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #cloud{
+            height: 200px;
+            width: 100%;
+            animation: bird 10s linear 0s infinite;
+        }
+        #airplane{
+            animation: airplane 10s linear 0s infinite;
+        }
+        #birds{
+            animation: bike 10s linear 0s infinite;
+            position: relative;
+        }
+        @keyframes airplane {
+            from{
+                position: relative;
+                left: 0px;
+            }
+            to{
+                position: relative;
+                left: 100%;
+            }
+        }
+        #birds-fly{
+            background-image: url("clouds");
+            background-size: 20% 100%;
+        }
+        #grass{
+            height: 200px;
+            width: 100%
+        }
+        #footer{
+            height: 200px;
+            width: 100%;
+        }
+        #car{
+            animation: car 5s linear 0s infinite;
+            position: relative;
+        }
+        @keyframes car {
+            from{
+                left:0px;
+            }
+            to{
+                left: 100%;
+            }
+        }
+        #bike{
+            animation: bike 5s linear 0s infinite;
+            position: relative;
+        }
+        @keyframes bike {
+            from{
+                left: 100%;
+            }
+            to{
+                left: 0px;
+            }
+        }
+        hr{
+            border: 5px dashed black;
+            border-spacing: 100px 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="cloud">
+            <img src="flight2" alt="" height="200px" width="200px" id = "airplane">
+        </div>
+        <div id="birds-fly">
+            <img src="birds"height="200px" width="200px" id="birds">
+        </div>
+        <div id="grass">
+            <img src="grass" alt="" height="200px" width="100%">
+        </div>
+        <div id="footer">
+            <img src="bike" alt="" height="200px" width="200px" id = "car"> 
+            <hr> 
+            <img src="cycle" alt="" id = "bike" height="200px" width="200px">
+        </div>
+    </main>
+</body>
+</html>

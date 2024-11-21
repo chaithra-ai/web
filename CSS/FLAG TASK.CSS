@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-color: hotpink;
+}
+
+.flag-container {
+    display: flex;
+    gap: 20px;
+}
+
+.flag {
+    width: 150px;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* France Flag */
+.france {
+    display: flex;
+    flex-direction: row;
+}
+
+.france .blue {
+    background-color: #0055A4;
+    flex: 1;
+}
+
+.france .white {
+    background-color: white;
+    flex: 1;
+}
+
+.france .red {
+    background-color: #EF4135;
+    flex: 1;
+}
+
+/* Italy Flag */
+.italy {
+    display: flex;
+    flex-direction: row;
+}
+
+.italy .green {
+    background-color: #009246;
+    flex: 1;
+}
+
+.italy .white {
+    background-color: white;
+    flex: 1;
+}
+
+.italy .red {
+    background-color: #CE2B37;
+    flex: 1;
+}
+
+/* Germany Flag */
+.germany {
+    display: flex;
+    flex-direction: column;
+}
+
+.germany .black {
+    background-color: black;
+    flex: 1;
+}
+
+.germany .red {
+    background-color: #DD0000;
+    flex: 1;
+}
+
+.germany .yellow {
+    background-color: #FFCC00;
+    flex: 1;
+}
+
+/* India Flag */
+.india {
+    display: flex;
+    flex-direction: column;
+}
+
+.india .saffron {
+    background-color: #FF9933;
+    flex: 1;
+}
+
+.india .white {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.india .ashoka-chakra {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000080;
+    border-radius: 50%;
+}
+
+.india .green {
+    background-color: #138808;
+    flex: 1;
+}
+
+/* Japan Flag */
+.japan {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.japan .circle {
+    width: 50px;
+    height: 50px;
+    background-color: #BC002D;
+    border-radius: 50%;
+}

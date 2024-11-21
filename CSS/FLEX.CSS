@@ -1,0 +1,36 @@
+*{
+    background-color: black;
+}
+#flex-container{
+    height: 60vh;
+    width: 70vw;
+    background-color: yellow;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    color: blueviolet;
+    font-size: 20px;
+}
+.flex-box1{
+    background-color: red;
+    border: 0.5px solid yellow;
+    height: 100px;
+    width: 100px;
+}
+#flex-items1{
+    order: 4;
+}
+#flex-items2{
+    order: 5;
+}
+#flex-items3{
+    order: 1;
+}
+#flex-items4{
+    order: 3;
+}
+
+/* wrap bottom  wrap rev=top */

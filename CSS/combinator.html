@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        nav{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        #content{
+            display: flex;
+            width: 30%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: yellowgreen;
+        }
+        li{
+            list-style: none;
+        }
+        nav h1{
+            color: orange;
+        }
+        #content+#cart{
+            color: orange;
+        }
+        #cart h2{
+            color: blue;
+        }
+        #combinator h1{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+        }
+        #combinator>h1{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+        #combinator+h1{
+            height: 100px;
+            width: 200px;
+            background-color: blue;
+
+        }
+        #combinator~h1{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <h1>logo</h1>
+            </div>
+            <div id="content">
+                <h1>home</h1>
+                <li><a href="">servises</a></li>
+                <li><a href="">products</a></li>
+            </div>
+            <div id="cart">
+                <h1>cart</h1>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div id="combinator">
+        <div>happy</div>
+        <h1>dasara</h1>
+    </div>
+    <section>
+        <h1>upcomming</h1>
+        <h1>happy</h1>
+        <h1>dont go</h1>
+        <h1>read only</h1>
+    </section>
+    <h1>hadfjjf jnfjbdf</h1>
+    <h1>mdfjbfbf</h1>
+</body>
+</html>

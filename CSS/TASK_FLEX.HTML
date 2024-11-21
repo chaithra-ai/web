@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        nav{
+           display: flex;
+           justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            width: 100%;
+            background-color: white;
+            box-shadow: 3px 3px 3px red;
+            margin: 15px 0px;
+        }
+        #contents{
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+        }
+        #contents>li:first-child{
+            order: 1;
+        }
+        #contents>li:nth-child(2){
+            order: 3;
+        }
+        #contents>li:nth-last-child(2){
+            order: 2;
+        }
+        #contents>input{
+            order: 4;
+        }
+        a{
+            text-decoration: none;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #main{
+            height: 40vh;
+            width: 50vw;
+            background-color: red;
+            font-size: 80px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+       #main>p{
+        width: 34%;
+       }
+       #sub-main>p{
+        font-size: 30px;
+       }
+       main>botton{
+        padding: 13px 40px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div id="logo">
+            <img src="logo" alt="" height="60px" width="60px">
+        </div>
+        <div id="contents">
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+           <input type="text" placeholder="search">
+        </div>
+    </nav>
+    </header>
+    <main>
+        <div id="main">
+            <p>hi,  i am browny star  .</p>
+        </div>
+        <div id="sub-main">
+            <p style="color: white;">ui/ux designer and web development</p>
+        </div>
+        <button>Dowload Resume</button>
+    </main>
+</body>
+</html>

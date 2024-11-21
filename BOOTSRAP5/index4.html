@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Bee World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background-color: black;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Honey Bee World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Bees</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Honey Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Raw Honey</a></li>
+                            <li><a class="dropdown-item" href="#">Bee Wax</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Royal Jelly</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">More Coming Soon</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Honey Facts" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2017/11/28/18/52/bee-2984342_640.jpg" class="d-block w-100" alt="Bee in a flower" height="500px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>The Beauty of Honey Bees</h5>
+                    <p>Experience the harmony between bees and nature.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2023/10/17/09/37/honey-bee-8320764_1280.jpg" class="d-block w-100" alt="Beehive" height="500px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Beehive Wonders</h5>
+                    <p>Discover the intricate world of bees.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2016/11/23/13/46/honey-1852934_640.jpg" class="d-block w-100" alt="Fresh honey" height="500px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Pure Honey</h5>
+                    <p>Straight from nature, packed with health benefits.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Cards -->
+    <div style="background-color: black;">
+        <div class="row">
+            <div class="col-sm-6 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Raw Honey</h5>
+                        <p class="card-text">Pure, unprocessed, and natural honey directly from the hive.</p>
+                        <a href="#" class="btn btn-danger">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bee Wax</h5>
+                        <p class="card-text">Used in skincare, candles, and beyond. Learn its many uses.</p>
+                        <a href="#" class="btn btn-danger">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Cards -->
+    <div style="display: flex; justify-content: space-around; align-items: center; position: relative; top: 50px;">
+        <div class="card" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/157580403/photo/honey.jpg" class="card-img-top" alt="Honey jar" height="200px">
+            <div class="card-body">
+                <h5 class="card-title">Honey Varieties</h5>
+                <p class="card-text">Explore the unique flavors of different honey types.</p>
+                <a href="#" class="btn btn-danger">Explore Now</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/497994145/photo/honey-jar-with-dipper.jpg" class="card-img-top" alt="Honey dipper" height="200px">
+            <div class="card-body">
+                <h5 class="card-title">Healthy Honey</h5>
+                <p class="card-text">Learn about the health benefits of honey in daily life.</p>
+                <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/499770960/photo/jar-of-honey.jpg" class="card-img-top" alt="Honey jar and flowers" height="200px">
+            <div class="card-body">
+                <h5 class="card-title">Sweet Recipes</h5>
+                <p class="card-text">Add a touch of honey to your favorite dishes.</p>
+                <a href="#" class="btn btn-danger">Find Recipes</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div style="position: relative; top: 100px; background-color: azure;">
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>About Honey Bees</h3>
+                    <p>Honey bees play a vital role in pollination and producing honey, a golden treasure of nature.</p>
+                    <ul>
+                        <li>Essential for ecosystem balance</li>
+                        <li>Producers of natural superfood</li>
+                        <li>Fascinating and industrious creatures</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://cdn.pixabay.com/photo/2023/10/17/09/37/honey-bee-8320764_1280.jpg" class="img-fluid rounded" alt="Honey bees" height="500px">
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
